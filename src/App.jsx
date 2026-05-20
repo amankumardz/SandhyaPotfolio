@@ -60,12 +60,12 @@ export default function App() {
             <p className="mt-4 text-stone-600">I blend customer empathy with analytical thinking and I am transitioning into QA to build reliable, user-focused digital experiences.</p>
             <div className="flex flex-wrap gap-3 mt-6">
               <a href="#contact" className="px-5 py-3 rounded-xl bg-stone-800 text-white hover:bg-stone-700 transition">Contact Me</a>
-              <a href="/resume-kumari-sandhya.pdf" download className="px-5 py-3 rounded-xl bg-white border border-stone-200 hover:-translate-y-0.5 transition">Download Resume</a>
+              <a href={`${import.meta.env.BASE_URL}resume-kumari-sandhya.pdf`} download className="px-5 py-3 rounded-xl bg-white border border-stone-200 hover:-translate-y-0.5 transition">Download Resume</a>
             </div>
           </div>
           <div className="flex justify-center">
             <motion.div animate={{ y: [0, -10, 0], boxShadow: ['0 0 0 rgba(0,0,0,0.08)', '0 0 35px rgba(184, 223, 199, 0.9)', '0 0 0 rgba(0,0,0,0.08)'] }} transition={{ repeat: Infinity, duration: 4.5 }} className="h-64 w-64 md:h-80 md:w-80 rounded-full p-2 bg-gradient-to-br from-mint via-white to-gold/40">
-              <img src="/profile.jpg" alt="Kumari Sandhya" className="h-full w-full object-cover rounded-full border-4 border-white/70" />
+              <img src={`${import.meta.env.BASE_URL}profile.jpg`} alt="Kumari Sandhya" className="h-full w-full object-cover rounded-full border-4 border-white/70" />
             </motion.div>
           </div>
         </section>
