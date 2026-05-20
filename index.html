@@ -12,60 +12,124 @@
     <script src="script.js" defer></script>
   </head>
   <body>
-    <header class="hero fade-in">
-      <div class="hero-content">
-        <p class="eyebrow">Hello, I'm</p>
+    <div class="bg-blobs" aria-hidden="true"></div>
+
+    <header class="hero fade-in" id="home">
+      <div class="hero-content glass-card">
+        <p class="eyebrow">Hello, I’m</p>
         <h1>Kumari Sandhya</h1>
         <p class="subtitle">Customer Support Executive • Aspiring QA Analyst</p>
-        <a class="btn" href="#contact">Let's Connect</a>
+        <div class="hero-actions">
+          <a class="btn primary" href="mailto:16sandhya04@gmail.com">Hire Me</a>
+          <a class="btn secondary" href="Kumari_Sandhya_Resume.pdf" download>Download Resume</a>
+        </div>
       </div>
+
       <div class="profile-photo" aria-label="Kumari Sandhya profile photo">
-        <img src="images/SandhyaProfile.jpg" alt="Portrait of Kumari Sandhya" />
+        <img src="images/profile.jpg" alt="Kumari Sandhya" />
       </div>
     </header>
 
     <main>
-      <section id="about" class="card fade-in">
+      <section id="about" class="glass-card fade-in">
         <h2>About</h2>
         <p>
-          Motivated professional with hands-on customer support experience and a growing foundation in software testing. I enjoy solving problems, communicating clearly, and delivering high-quality user experiences.
+          Motivated and empathetic professional with hands-on customer support experience and a growing
+          foundation in software testing. I enjoy solving customer problems, improving service quality, and
+          building a long-term career in QA.
         </p>
       </section>
 
-      <section id="experience" class="card fade-in">
-        <h2>Experience</h2>
-        <ul>
-          <li><strong>Customer Support Executive</strong> — Assisted customers with issue resolution and service guidance.</li>
-          <li><strong>Quality Focus</strong> — Documented recurring problems and collaborated to improve processes.</li>
-        </ul>
-      </section>
+      <section id="experience" class="glass-card fade-in">
+        <h2>Experience Timeline</h2>
+        <div class="timeline">
+          <article class="timeline-item reveal-up">
+            <h3>Customer Support Executive</h3>
+            <p class="meta">Teleperformance | Uber Eats Project</p>
+            <p class="date">Oct 2025 – Present</p>
+            <ul>
+              <li>Handle customer queries related to orders, deliveries, refunds, and account management.</li>
+              <li>Manage inbound voice/chat support with empathy and quality.</li>
+              <li>Escalate complex issues and follow up for resolution.</li>
+              <li>Maintain CRM records.</li>
+              <li>Meet KPIs like AHT, FCR, CSAT, and quality scores.</li>
+            </ul>
+          </article>
 
-      <section id="skills" class="card fade-in">
-        <h2>Skills</h2>
-        <div class="skills-grid">
-          <span>Communication</span>
-          <span>Problem Solving</span>
-          <span>Manual Testing</span>
-          <span>Bug Reporting</span>
-          <span>MS Office</span>
-          <span>Team Collaboration</span>
+          <article class="timeline-item reveal-up">
+            <h3>Soft Skills Trainer</h3>
+            <p class="meta">SGRS Academic Private Limited</p>
+            <p class="date">Sep 2023 – Present</p>
+            <ul>
+              <li>Deliver training on communication, workplace behavior, teamwork, and etiquette.</li>
+              <li>Assess trainee performance and provide constructive feedback.</li>
+              <li>Manage training data through Shramadhan portal.</li>
+              <li>Help improve curriculum and training materials.</li>
+            </ul>
+          </article>
+
+          <article class="timeline-item reveal-up">
+            <h3>Process Executive – Customer Care</h3>
+            <p class="meta">Nimbus BPO</p>
+            <p class="date">Nov 2021 – Nov 2022</p>
+            <ul>
+              <li>Handled inbound and outbound customer calls.</li>
+              <li>Raised and managed support tickets.</li>
+              <li>Maintained CRM data and followed process guidelines.</li>
+            </ul>
+          </article>
         </div>
       </section>
 
-      <section id="education" class="card fade-in">
+      <section id="skills" class="glass-card fade-in">
+        <h2>Skills</h2>
+        <div class="skills-grid">
+          <span class="skill-chip">Customer Support</span><span class="skill-chip">Escalation Handling</span><span class="skill-chip">CSAT</span>
+          <span class="skill-chip">FCR</span><span class="skill-chip">AHT</span><span class="skill-chip">CRM Tools</span>
+          <span class="skill-chip">Ticket Management</span><span class="skill-chip">Test Case Writing</span><span class="skill-chip">Bug Reporting</span>
+          <span class="skill-chip">Manual Testing Concepts</span><span class="skill-chip">MS Excel</span><span class="skill-chip">Shramadhan Portal</span>
+          <span class="skill-chip">Canva</span><span class="skill-chip">Adobe Photoshop</span><span class="skill-chip">Communication</span>
+          <span class="skill-chip">Leadership</span><span class="skill-chip">Team Management</span><span class="skill-chip">Adaptability</span>
+        </div>
+      </section>
+
+      <section id="projects" class="glass-card fade-in">
+        <h2>Highlighted Projects / Work Impact</h2>
+        <div class="project-grid">
+          <article class="project-card reveal-up">
+            <h3>Uber Eats Customer Support Operations</h3>
+            <p>Focused on resolving order issues, refunds, and delivery concerns while improving customer satisfaction.</p>
+          </article>
+          <article class="project-card reveal-up">
+            <h3>Soft Skills Training Program</h3>
+            <p>Led communication and workplace behavior training programs to improve trainee confidence and performance.</p>
+          </article>
+          <article class="project-card reveal-up">
+            <h3>QA Learning Journey</h3>
+            <p>Built practical skills in manual testing, test case writing, and bug reporting with strong attention to detail.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="education" class="glass-card fade-in">
         <h2>Education</h2>
-        <p>Graduate with a strong interest in technology, QA practices, and digital growth opportunities.</p>
+        <ul class="info-list">
+          <li>Bachelor’s Degree, Doranda College, Ranchi — 2024</li>
+          <li>Intermediate, Ranchi Women’s College, Ranchi — 2020</li>
+          <li>10th Standard, Cluny Convent School, Ranchi — 2018</li>
+        </ul>
       </section>
 
-      <section id="interests" class="card fade-in">
+      <section id="interests" class="glass-card fade-in">
         <h2>Interests</h2>
-        <p>Software Testing, Web Technologies, Continuous Learning, and Creating Better User Experiences.</p>
+        <p>Quality Assurance, Customer Experience Excellence, Professional Growth, Creativity, and Continuous Learning.</p>
       </section>
 
-      <section id="contact" class="card fade-in">
+      <section id="contact" class="glass-card fade-in">
         <h2>Contact</h2>
-        <p>Email: <a href="mailto:sandhyakumari@example.com">sandhyakumari@example.com</a></p>
-        <p>Location: India</p>
+        <p>Email: <a href="mailto:16sandhya04@gmail.com">16sandhya04@gmail.com</a></p>
+        <p>Phone: <a href="tel:+918797031600">8797031600</a></p>
+        <p>Location: Ranchi, Jharkhand</p>
       </section>
     </main>
   </body>
